@@ -2,3 +2,4 @@
 .htaccess
 vendor/
 linkDB/connect.php
+.phpintel/
