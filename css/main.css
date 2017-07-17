@@ -1,0 +1,542 @@
+/* GLOBAL */
+html, body, h1, h2, h3, span, a, p, li, ul{
+  font-size: 18px;
+  font-weight: 300 !important;
+  font-family: 'Muli', 'Open Sans', sans-serif !important;
+}
+ a, p{
+ font-family: 'Open Sans', sans-serif !important
+}
+
+
+body {
+    background-color: #edf0f8;
+}
+
+
+/* nav */
+#topNav {
+    box-shadow: none;
+}
+header, .main, footer {
+      padding-left: 450px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, .main, footer {
+        padding-left: 0;
+      }
+    }
+    .fullscreenMain {
+        padding-left: 200px;
+    }
+ .side-nav {
+    position: fixed;
+    width: 200px;
+    left: -105%;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #0090FF;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: left;
+}    
+
+.side-nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+}
+ .side-nav-2 {
+    position: fixed;
+    width: 250px;
+    left: -135%;
+    top: 0;
+    margin-left: 200px;
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100% + 60px);
+    padding-bottom: 60px;
+    background-color: #0090FF;
+    z-index: 998;
+    overflow-y: auto;
+    will-change: left;
+    -moz-will-change: left;
+
+}    
+
+ .side-nav-2 li{
+    padding: 10px 15px 10px 15px;
+
+}    
+
+.mainSideIcons {
+    font-size: 40px;
+    text-align:  center;
+}
+.subText{
+    font-size: 14px;
+    padding: 0;
+    line-height: 15px;
+}
+.subSubText{
+    font-size: 13px;
+    padding: 0;
+    line-height: 15px;
+}
+
+.side-nav.fixed a {
+padding: 0;
+}
+.side-nav.fixed a:hover {
+color: white !important;
+}
+
+.myProfile{
+    padding-top: 2px;
+    font-size: 13px;
+}
+.myProfile:hover{
+    color: white !important;
+}
+#toggleQueue{
+cursor: pointer;
+}
+#toggleQueueMobile {
+
+}
+#slide-out2 li {
+    border-bottom: #005699 1px solid;
+}
+.queueItemsFull {
+    height: 80px;
+    padding: 10px 15px 10px 15px;
+}
+
+.queueItemEnabled {
+    border-left: 5px solid #99d3ff;
+}
+
+.queuePreviewIcons {
+    margin: 0 10px 8px 0;
+}
+@media only screen and (max-width: 992px){
+.side-nav.fixed {
+    left: -135%;
+}
+}
+/* QuipBody */
+.collection{
+    margin-top: 4.25px;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+
+}
+.collection .collection-item {
+    min-height: 80px;
+}
+
+.secondary-content {
+    margin-left:15px;
+}
+.secondary-content i {
+     font-size: 35px;
+
+}
+
+.quipCellText{
+color: black;
+word-wrap:break-word;
+}
+.quipCellTextSmaller{
+color: #898989;
+font-size: 14px;
+word-wrap:break-word;
+}
+
+.addToQueueButton{
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.fa-minus-square {
+    color: red;
+}
+@media only screen and (max-width : 992px) {
+.fullscreenMain {
+padding-left: 0;
+}
+}
+/*New Quip Menu */
+.picker__frame {
+    min-width: 350px !important;
+}
+
+/* SearchBar */
+#searchBar {
+    z-index: 998;
+
+}
+#closeSearchBar .input-field input[type=search] ~ .material-icons {
+color: inherit;
+}
+.input-field input[type="search"]:focus{
+    width: 100%;
+}
+/* Login/Registration page */
+
+ #loginForm .input-field label, #registerForm .input-field label, #forgotPassword .input-field label {
+    color: white;
+}
+#loginForm input[type=email], #registerForm input[type=email], #forgotPassword input[type=email], 
+#loginForm input[type=password], #registerForm input[type=password], 
+#loginForm input[type=text], #registerForm input[type=text] {
+    border-bottom: 1px solid white;
+}
+@media only screen and (min-width : 601px) {
+.loginCard {
+    margin: 0 0 0 13%;
+}
+}
+@media only screen and (max-width : 600px) {
+.loginCard {
+    margin-top: 5%;
+}
+}
+#quobolLogoLogin{
+        text-align: center;
+    margin: auto;
+    margin-top: 0;
+    max-height: 150px;
+    z-index: 1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#loginUser{
+    line-height: 14px;
+
+}
+#registerUser{
+    line-height: 14px;
+
+
+}
+#recoverUser{
+    line-height: 14px;
+
+}
+#showLoginForm{
+cursor: pointer;
+}
+#showRegisterForm{
+cursor: pointer;
+}
+#showForgotPassword{
+cursor: pointer;
+}
+
+/* user page */
+
+.userProfilePic {
+    border: 2px double white;
+    border-radius: 50% !important;
+    background-color: #0090ff;
+    height: 90px; 
+    width:90px !important; 
+    margin-right: 20px; 
+}
+.userProfileName {
+    font-size: 20px !important;
+    text-shadow: 2px 2px 4px black;
+}
+.toggleFollowPerson{
+padding-right: 10px;
+cursor: pointer;
+}
+.toggleFollowPerson:hover{
+    color: white;
+}
+.userProfileQuirkLabel{
+font-size: 14px;
+line-height: 24px;
+}
+.userProfileQuirkNumber{
+font-size: 15px;
+line-height: 24px;
+color: white;
+padding-left: 70px;
+}
+
+.userProfileQuipsLabel{
+font-size: 20px;
+line-height: 24px;
+}
+.userProfileQuipsNumber{
+font-size: 24px;
+line-height: 24px;
+color: white;
+padding-left: 70px;
+}
+.forPreview {
+    border: 2px double white;
+    background-color: #0090ff;
+    max-height: 200px; 
+    
+}
+#previewHolder{
+    width: 100%;
+}
+.modal-trigger2 {
+    color: white;
+    text-shadow: 5px 5px 8px black;
+}
+/* Event Page */
+
+.eventName{
+    margin: 5px 0 5px 0;
+    font-size: 25px;
+}
+.eventSubmittedBy {
+    margin: 5px 0 5px 0;
+    font-size: 15px;
+}
+.card .card-action {
+    padding: 7px;
+}
+.thisEventsFollowers {
+    background-color: #0090FF;
+    color: white;
+    text-transform: none;
+}
+#subbedUsers {
+    max-height: 57px;
+ overflow: auto;
+ overflow-y: hidden; 
+ white-space:nowrap;
+    padding-bottom: 20px;
+
+}
+/* SPinner loding location screen*/
+.containerForSpinner{
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    text-align: center;
+    padding-top: 5%;
+}
+.preloader-wrapper.big{
+    width: 200px;
+    height: 200px;
+    margin: 5% auto;
+}
+.spinner-blue, .spinner-blue-only{
+    border-color: #0090FF;
+}
+.gettingLocationText{
+    font-size: 4em;
+    font-size: 4vw;
+}
+/* Chat */
+.messageWrapper{
+    width: 100%;
+    margin: 5px;
+    display: inline-block;
+}
+.myMessageCss{
+margin: 5px;
+background-color: #0090FF;
+color: white;
+padding: 5px;
+max-width: 95%;
+min-height: 20px;
+font-size: 16px;
+padding: 10px;
+    word-wrap: break-word;
+}
+
+.otherMessageCss {
+margin: 5px;
+background-color: #99d3ff;
+color: white;
+padding: 5px;
+max-width: 95%;
+min-height: 20px;
+font-size: 16px;
+padding: 10px;
+word-wrap: break-word;
+
+}
+
+.howUsernameAppearsInChat{
+    color: #999999;
+    padding: 0 10px 0 10px;
+}
+.message {
+    margin-bottom: 35px; 
+    min-height: 40px;
+}
+#eventChatInput{
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #e9e9e9;
+}  
+@media only screen and (max-width : 1205px) {
+    #eventChatInput {
+        width: 93%;
+    }
+}  
+@media only screen and (max-width : 1100px) {
+    #eventChatInput {
+        width: 90%;
+    }
+}  
+@media only screen and (max-width : 992px) {
+    #eventChatInput {
+        width: 100%;
+    }
+}  
+#eventChatInput .row {
+    margin: 0;
+    height: 50px;
+}
+#messageList{
+    padding: 10px 20px 50px 20px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+#messageContent {
+    resize: none;
+    overflow: hidden;
+    min-height: 26px;
+    max-height: 200px;
+    border: none;
+    margin: 7px 5px 0 5px;
+    font-size:16px;
+    line-height: 23px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px 0 5px 10px;
+    color: black;
+    outline: none;
+     word-wrap: break-word;
+
+}
+textarea::-webkit-input-placeholder {
+color: rgba(0,0,0,0.71) !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: rgba(0,0,0,0.71) !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: rgba(0,0,0,0.71) !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: rgba(0,0,0,0.71) !important;  
+}
+#sendMessageButton i{
+    font-size: 40px;
+    padding-top: 5px;
+    color: #0090FF;
+}
+.timestamp {
+    margin-bottom: 5px;
+}
+/* error modal */
+.errorModal {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 100%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
+/* blog stuff */
+.blogTitle {
+    border-left: 3px solid #0090FF;
+    padding-left: 15px;
+}
+.blogPosts {
+    margin: 2% 3% 0 3%;
+}
+/* mobile browser views */
+
+#queueForMobile{
+    height: 100%;
+    background-color: #0073cc;
+}
+/*  General Coloring & styles*/
+.pls-no-border{
+    border: none;
+}
+.bknd-blue {
+    background-color: #0090FF !important;
+}
+.bknd-blue-light {
+    background-color: #99d3ff !important;
+}
+.bknd-blue-dark {
+    background-color: #0073cc !important;
+}
+.text-blue {
+    color: #0090FF !important;
+}
+.text-blue-light {
+    color: #99d3ff !important;
+}
+.text-blue-dark {
+    color: #0073cc !important;
+}
+.text-blue-darker {
+    color: #005699 !important;
+}
+.text-grey {
+    color: rgba(0,0,0,0.71) !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.margin-10 {
+    margin: 10px !important;
+}
+.padding-10 {
+    margin: 10px !important;
+}
+.sidenav-overlay {
+    display: hidden;
+}
+.dropdown-content li > a, .dropdown-content li > span{
+    color: #0090FF;
+}
+.hidden {
+    display: none;
+}
+.fix-link{
+    display: inline-block;
+}
